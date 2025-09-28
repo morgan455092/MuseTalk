@@ -69,4 +69,6 @@ if [ "$mode" = "realtime" ]; then
 fi
 
 # Run inference
-python3 -m $script_name $cmd_args
+#python3 -m $script_name $cmd_args
+
+MPLBACKEND=Agg ./.venv/bin/python -m $script_name $cmd_args
